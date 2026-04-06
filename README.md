@@ -16,13 +16,41 @@ This project aims to classify mental health conditions (Anxiety, Depression, Nor
 - Text preprocessing (cleaning, stopword removal)
 - Initial insights and visualization
 
+## Models Used
+### 1. TF-IDF + SVM
+A traditional machine learning approach was implemented using TF-IDF vectorization combined with a Support Vector Machine (SVM) classifier.
+- TF-IDF converts text into numerical feature vectors
+- SVM (linear kernel) is used for classification
+- N-grams (unigrams + bigrams) were used to capture local patterns
 
+**Performance:**
+- Accuracy: ~61%
+- Performs well on structured and simple text patterns
+- Struggles with contextual understanding and overlapping emotions
+
+
+### 2. BERT (Bidirectional Encoder Representations from Transformers)
+A deep learning approach using a pre-trained BERT model (`bert-base-uncased`) was fine-tuned for this classification task.
+- Captures contextual meaning of words
+- Handles complex sentence structures
+- Uses transformer-based architecture
+
+**Performance:**
+- Accuracy: ~75%
+- Strong performance across most classes
+- Better at understanding emotional context
 
 
 ## Model Comparison
-BERT outperformed SVM with higher accuracy and better contextual understanding.
+| Model            | Accuracy | Strengths                          | Weaknesses                          |
+|------------------|----------|-----------------------------------|-------------------------------------|
+| SVM (TF-IDF)     | ~61%     | Fast, lightweight                 | Poor context understanding          |
+| BERT             | ~75%     | High accuracy, understands context| Computationally expensive           |
 
-- SVM Accuracy: 61%
-- BERT Accuracy: 75%
+### Key Insights
+- BERT significantly outperforms SVM in accuracy and contextual understanding  
+- SVM is faster and suitable for simpler or low-resource environments  
+- BERT is better suited for real-world applications involving complex text  
 
-BERT is more suitable for real-world applications despite higher computational cost.
+Overall, BERT is chosen as the **preferred model** due to its superior performance.
+
