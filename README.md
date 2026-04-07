@@ -54,3 +54,9 @@ A deep learning approach using a pre-trained BERT model (`bert-base-uncased`) wa
 
 Overall, BERT is chosen as the **preferred model** due to its superior performance.
 
+## Live Demo
+The application is deployed using Streamlit and can be accessed here:
+
+https://mental-health-text-classification-bmeuwmuhnkgnyeqxmvonwc.streamlit.app/
+Users can enter text and get real-time mental health predictions using the trained TF-IDF + SVM model.
+
