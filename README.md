@@ -1,5 +1,5 @@
 # mental-health-text-classification
-NLP project to classify mental health status using BERT and SVM
+Predictive project to classify mental health status using BERT and SVM
 
 ## Problem Statement
 This project aims to classify mental health conditions (Anxiety, Depression, Normal, Suicidal) from textual data using machine learning and deep learning techniques.
